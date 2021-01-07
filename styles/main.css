@@ -1,0 +1,69 @@
+header {
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+h1 {
+    padding-top: 2em;
+}
+
+.contentContainer {
+    background-color: lavender;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.containerLeft {
+    display: flex;
+    flex-basis: 77%;
+    flex-direction: column;
+}
+
+.containerLeft__fishList {
+    display: flex;
+    flex-direction: row;
+    background-color: lightseagreen;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.containerLeft__travelQuotes {
+    display: flex;
+    background: mediumorchid;
+    padding-top: 2em;
+}
+
+.containerLeft__travelLocations {
+    display: flex;
+    background-color: mediumpurple;
+    padding-top: 2em;
+}
+
+aside {
+    display: flex;
+    flex-basis: 23%;
+}
+
+.containerRight {
+    margin-top: 3em;
+}
+
+li {
+    padding-top: 2em;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    margin: 3em;
+}
