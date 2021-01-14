@@ -21,6 +21,7 @@ export const LocationList = () => {
 
     // Add to the existing HTML in the content element
     contentElement.innerHTML += `
+    <h3>Locations</h3>
         <article class="locationList">
             ${locationsHTMLRepresentations}
         </article>

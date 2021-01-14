@@ -1,11 +1,11 @@
 const fishCollection = [
     {
-        image: "https://lh3.googleusercontent.com/proxy/8hYD0DPHjH2pPZkgxgZFHb6DbdRdnPiBrO2WEjtIs0MHMYOKeduppRUsq0Pt6qqGboJswIuhrEZMBPzRiYpjmguWpBSxGkh1U3JK6Q9MuvwiaBs3eFxjzQ",
+        image: "https://lh3.googleusercontent.com/proxy/ALxa9JJ4D61ZVYk4TVV9DZ2CRuenW2xY2s8IKEaiw3xjocfJ5u9A6COiNo0RYXQ9WbrlVPcjoEY4_jKwlwHLtoPSwvelJD5ixxcFH0Wh2JO1Hfv02Ad8lA",
         species: "Guppy",
         name: "Bart",
         habitat: "fresh water",
         food: "crustaceans",
-        length: "5"
+        length: "4"
     },
     {
         image: "https://2.imimg.com/data2/TK/QK/MY-3415778/common-carp-cyprinus-carpio-fish-seeds-500x500.jpg",
@@ -37,7 +37,7 @@ const fishCollection = [
         name: "Github",
         habitat: "salt water",
         food: "shellfish",
-        length: "10 inches"
+        length: "11 inches"
     },
     {
         image: "https://i.pinimg.com/originals/82/b4/bd/82b4bd96e20863861cb1af1b16c180a7.jpg",
@@ -61,7 +61,7 @@ const fishCollection = [
         name: "Benito",
         habitat: "salt water",
         food: "small fish",
-        length: "12"
+        length: "17"
     }
 ]
 
@@ -73,7 +73,7 @@ export const mostHolyFish = () => {
     // 3, 6, 9, 12, etc... fish
     const holyFish = []
 
-    for (fish of fishCollection) {
+    for (const fish of fishCollection) {
         if (fish.length % 3 === 0) {
             holyFish.push(fish)
         }
@@ -86,14 +86,11 @@ export const soldierFish = () => {
     // 5, 10, 15, 20, 25, etc... fish
     const soldiers = []
 
-    for (fish of fishCollection) {
+    for (const fish of fishCollection) {
         if (fish.length % 5 === 0) {
             soldiers.push(fish)
         }
     }
-
-
-
 
     return soldiers
 }
@@ -103,7 +100,7 @@ export const nonHolyFish = () => {
     // Any fish not a multiple of 3 or 5
     const regularFish = []
 
-    for (fish of fishCollection) {
+    for (const fish of fishCollection) {
         if (fish.length % 3 !== 0 && fish.length % 5 !== 0) {
             regularFish.push(fish)
         }
