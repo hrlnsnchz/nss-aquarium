@@ -24,13 +24,27 @@ h1 {
     flex-direction: column;
 }
 
-.containerLeft__fishList {
+.fish_card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: lightseagreen;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    
+    width: 500px;
+    height: auto;
+    padding: 50px;
+}
+
+.fishList {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.fish__image {
+    width: 400px;
+    height: 200px;
+    border-radius: 10%;
 }
 
 .containerLeft__travelQuotes {
@@ -45,14 +59,17 @@ h1 {
     padding-top: 2em;
 }
 
+
+
 aside {
-    display: flex;
     flex-basis: 23%;
 }
 
 .containerRight {
     margin-top: 3em;
 }
+
+
 
 li {
     padding-top: 2em;
